@@ -11,6 +11,14 @@
 		9529997F25B2DC42004B5ADA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529997E25B2DC42004B5ADA /* ContentView.swift */; };
 		9529998125B2DC4A004B5ADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9529998025B2DC4A004B5ADA /* Assets.xcassets */; };
 		9529998425B2DC4A004B5ADA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9529998325B2DC4A004B5ADA /* Preview Assets.xcassets */; };
+		9533BFB625B5815700F271F8 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533BFB525B5815700F271F8 /* Hero.swift */; };
+		9533BFB925B5822D00F271F8 /* HeroesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533BFB825B5822D00F271F8 /* HeroesViewModel.swift */; };
+		9533BFC125B5879100F271F8 /* HeroesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533BFC025B5879100F271F8 /* HeroesService.swift */; };
+		9533BFC425B5945500F271F8 /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533BFC325B5945500F271F8 /* HeroView.swift */; };
+		95723C4D25B6C8CA009B1483 /* BBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95723C4C25B6C8CA009B1483 /* BBModel.swift */; };
+		95723C5225B6D08B009B1483 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95723C5125B6D08B009B1483 /* CharactersViewModel.swift */; };
+		95723C5625B6D274009B1483 /* Networkservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95723C5525B6D274009B1483 /* Networkservice.swift */; };
+		95DE29A925B7F0E80082D2A7 /* BBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE29A825B7F0E80082D2A7 /* BBView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		9529998025B2DC4A004B5ADA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9529998325B2DC4A004B5ADA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9529998525B2DC4A004B5ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9533BFB525B5815700F271F8 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		9533BFB825B5822D00F271F8 /* HeroesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesViewModel.swift; sourceTree = "<group>"; };
+		9533BFC025B5879100F271F8 /* HeroesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesService.swift; sourceTree = "<group>"; };
+		9533BFC325B5945500F271F8 /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
+		95723C4C25B6C8CA009B1483 /* BBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBModel.swift; sourceTree = "<group>"; };
+		95723C5125B6D08B009B1483 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
+		95723C5525B6D274009B1483 /* Networkservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkservice.swift; sourceTree = "<group>"; };
+		95DE29A825B7F0E80082D2A7 /* BBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +69,10 @@
 			isa = PBXGroup;
 			children = (
 				9529997C25B2DC42004B5ADA /* ApiAppCombineApp.swift */,
-				9529997E25B2DC42004B5ADA /* ContentView.swift */,
+				95723C4B25B6C13E009B1483 /* Views */,
+				95723C4F25B6CA71009B1483 /* Model */,
+				95723C4625B68E0F009B1483 /* ViewModel */,
+				95723C5425B6D19D009B1483 /* Repository */,
 				9529998025B2DC4A004B5ADA /* Assets.xcassets */,
 				9529998525B2DC4A004B5ADA /* Info.plist */,
 				9529998225B2DC4A004B5ADA /* Preview Content */,
@@ -67,6 +86,43 @@
 				9529998325B2DC4A004B5ADA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		95723C4625B68E0F009B1483 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9533BFB825B5822D00F271F8 /* HeroesViewModel.swift */,
+				95723C5125B6D08B009B1483 /* CharactersViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		95723C4B25B6C13E009B1483 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9529997E25B2DC42004B5ADA /* ContentView.swift */,
+				9533BFC325B5945500F271F8 /* HeroView.swift */,
+				95DE29A825B7F0E80082D2A7 /* BBView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		95723C4F25B6CA71009B1483 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9533BFB525B5815700F271F8 /* Hero.swift */,
+				95723C4C25B6C8CA009B1483 /* BBModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95723C5425B6D19D009B1483 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9533BFC025B5879100F271F8 /* HeroesService.swift */,
+				95723C5525B6D274009B1483 /* Networkservice.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +194,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9533BFB925B5822D00F271F8 /* HeroesViewModel.swift in Sources */,
+				9533BFC425B5945500F271F8 /* HeroView.swift in Sources */,
 				9529997F25B2DC42004B5ADA /* ContentView.swift in Sources */,
+				95723C5225B6D08B009B1483 /* CharactersViewModel.swift in Sources */,
+				9533BFC125B5879100F271F8 /* HeroesService.swift in Sources */,
+				95723C4D25B6C8CA009B1483 /* BBModel.swift in Sources */,
+				95DE29A925B7F0E80082D2A7 /* BBView.swift in Sources */,
+				9533BFB625B5815700F271F8 /* Hero.swift in Sources */,
+				95723C5625B6D274009B1483 /* Networkservice.swift in Sources */,
 				9529997D25B2DC42004B5ADA /* ApiAppCombineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

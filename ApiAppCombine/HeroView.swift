@@ -1,20 +1,26 @@
-//
-//  HeroView.swift
-//  ApiAppCombine
-//
-//  Created by Екатерина Чернова on 18.01.2021.
-//
 
 import SwiftUI
 
 struct HeroView: View {
+    
     var id: Int?
     @ObservedObject var viewModel = HeroesViewModel()
-    
+    @EnvironmentObject var nav: NavViewModel
     
     var body: some View {
-        HStack {
-            Text("")
+        NavigationView {
+            
+            List(viewModel.heroes, id: \.id) { hero in
+                
+                Text(hero.name )
+                    .onTapGesture {
+                        nav.push(HeroDetail(hero))
+                        
+                    }
+            }
+            .onAppear {
+                viewModel.fetchHeroes()
+            }
         }
     }
 }

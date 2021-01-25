@@ -7,22 +7,24 @@ class  HeroesViewModel: ObservableObject {
     
     // Врапер @Published позволяет Swift следить за любыми изменениями этой переменной. Если что-то поменяется, то все свойства body во всех представлениях, где используется переменная heroes будут обновлены.
     
-   
-    var cansellation: AnyCancellable?
-    let service = HeroesService()
     
-   
+    private var cansellation: [AnyCancellable] = []
+    private let service = HeroesService()
+    
+    
     
     func fetchHeroes() {
-        cansellation = service.fetch()
+        service
+            .fetch()
             .receive(on: DispatchQueue.main)
             .mapError({(error) -> Error in
                 print(error)
                 return error
             })
             .sink(receiveCompletion: {_ in }, receiveValue: {heroes in
-                 self.heroes = heroes
-    })
+                self.heroes = heroes
+            })
+            .store(in: &cansellation)
     }
     
 }

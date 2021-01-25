@@ -19,6 +19,10 @@
 		95723C5225B6D08B009B1483 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95723C5125B6D08B009B1483 /* CharactersViewModel.swift */; };
 		95723C5625B6D274009B1483 /* Networkservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95723C5525B6D274009B1483 /* Networkservice.swift */; };
 		95DE29A925B7F0E80082D2A7 /* BBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE29A825B7F0E80082D2A7 /* BBView.swift */; };
+		95DE29AC25B82A5D0082D2A7 /* BbDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE29AB25B82A5D0082D2A7 /* BbDetail.swift */; };
+		95DE29B225B82E840082D2A7 /* NavViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE29B125B82E840082D2A7 /* NavViewModel.swift */; };
+		95DE29B525B82F340082D2A7 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE29B425B82F340082D2A7 /* Enums.swift */; };
+		95DE29B925B9DE9F0082D2A7 /* HeroDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE29B825B9DE9F0082D2A7 /* HeroDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		95723C5125B6D08B009B1483 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
 		95723C5525B6D274009B1483 /* Networkservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkservice.swift; sourceTree = "<group>"; };
 		95DE29A825B7F0E80082D2A7 /* BBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBView.swift; sourceTree = "<group>"; };
+		95DE29AB25B82A5D0082D2A7 /* BbDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BbDetail.swift; sourceTree = "<group>"; };
+		95DE29B125B82E840082D2A7 /* NavViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewModel.swift; sourceTree = "<group>"; };
+		95DE29B425B82F340082D2A7 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		95DE29B825B9DE9F0082D2A7 /* HeroDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				9529997C25B2DC42004B5ADA /* ApiAppCombineApp.swift */,
+				95DE29B725B9DE0D0082D2A7 /* Navigation */,
 				95723C4B25B6C13E009B1483 /* Views */,
 				95723C4F25B6CA71009B1483 /* Model */,
 				95723C4625B68E0F009B1483 /* ViewModel */,
@@ -100,7 +109,9 @@
 		95723C4B25B6C13E009B1483 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				95DE29B825B9DE9F0082D2A7 /* HeroDetail.swift */,
 				9529997E25B2DC42004B5ADA /* ContentView.swift */,
+				95DE29AB25B82A5D0082D2A7 /* BbDetail.swift */,
 				9533BFC325B5945500F271F8 /* HeroView.swift */,
 				95DE29A825B7F0E80082D2A7 /* BBView.swift */,
 			);
@@ -123,6 +134,15 @@
 				95723C5525B6D274009B1483 /* Networkservice.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		95DE29B725B9DE0D0082D2A7 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				95DE29B425B82F340082D2A7 /* Enums.swift */,
+				95DE29B125B82E840082D2A7 /* NavViewModel.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,10 +215,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9533BFB925B5822D00F271F8 /* HeroesViewModel.swift in Sources */,
+				95DE29AC25B82A5D0082D2A7 /* BbDetail.swift in Sources */,
 				9533BFC425B5945500F271F8 /* HeroView.swift in Sources */,
 				9529997F25B2DC42004B5ADA /* ContentView.swift in Sources */,
 				95723C5225B6D08B009B1483 /* CharactersViewModel.swift in Sources */,
 				9533BFC125B5879100F271F8 /* HeroesService.swift in Sources */,
+				95DE29B925B9DE9F0082D2A7 /* HeroDetail.swift in Sources */,
+				95DE29B225B82E840082D2A7 /* NavViewModel.swift in Sources */,
+				95DE29B525B82F340082D2A7 /* Enums.swift in Sources */,
 				95723C4D25B6C8CA009B1483 /* BBModel.swift in Sources */,
 				95DE29A925B7F0E80082D2A7 /* BBView.swift in Sources */,
 				9533BFB625B5815700F271F8 /* Hero.swift in Sources */,

@@ -6,8 +6,7 @@ class BBViewModel: ObservableObject {
     private var subs: [AnyCancellable] = []
     
     @Published var character:[BBCharacterElement] = []
-    @Published var username: String = ""
-    @Published var password: String = ""
+    
     
     func fetchData() {
         network

@@ -1,23 +1,29 @@
-//
-//  BBView.swift
-//  ApiAppCombine
-//
-//  Created by Екатерина Чернова on 20.01.2021.
-//
 
 import SwiftUI
 
 struct BBView: View {
-    @ObservedObject private var BViewModel = BBViewModel()
+    @ObservedObject private var bViewModel = BBViewModel()
+    @EnvironmentObject var nav: NavViewModel
     
     var body: some View {
-        VStack {
-            List(BViewModel.character, id:\.charID) { item in
+        NavigationView {
+            
+            
+            List(bViewModel.character, id:\.charID) { item in
+                
                 Text(item.name ?? "")
+                Text(item.birthday?.rawValue ?? "")
+                    
+                    
+                    .onTapGesture {
+                        nav.push(BbDetail(item))
+                        
+                    }
             }
+            
         }
         .onAppear {
-            BViewModel.fetchData()
+            bViewModel.fetchData()
         }
     }
 }
